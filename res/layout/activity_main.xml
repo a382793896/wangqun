@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	
+   
+	<fragment
+	    android:id="@+id/fragment_tab" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity ="bottom"
+	    android:layout_alignParentBottom="true"
+	    android:name="ui.Tab_Fragment"
+	    tools:layout = "@layout/fragment_tab"
+	    />
+	<FrameLayout 
+	    android:id="@+id/content_frame"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"  
+	    android:layout_gravity="top"
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@id/fragment_tab"
+	    ></FrameLayout>
+</RelativeLayout>

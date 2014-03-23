@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">yh_android</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="jingdian">景点</string>
+    <string name="youhui">优惠</string>
+    <string name="xinwen">新闻</string>
+    <string name="zuji">足迹</string>
+    <string name="ItemPhotos">显示图片</string>
+<string name="comments">评论</string>
+<string name="comment_count">(%d)</string>
+</resources>

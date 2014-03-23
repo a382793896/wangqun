@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:id="@+id/photos"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout="@layout/widget_photo" />
+
+    <ViewStub
+        android:id="@+id/audio"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout="@layout/widget_audio" />
+
+    <TextView
+        android:id="@+id/ItemContent"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:padding="10dp"
+        android:text="这里是Item的内容" />
+
+    <View
+        android:id="@+id/comments_separator"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_content"
+            android:text="@string/comment_count"
+            android:textSize="16sp"
+             />
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            style="@style/RatingBar"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:isIndicator="true"
+            android:rating="5"
+            
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</LinearLayout>
